@@ -11,8 +11,8 @@ import mahotas
 def extraccion(image):
     
     ##TRANSFORMACION
-    #Recordar hacer la transformacion de la imagen con el programa Transformacion.py
-    image = cv2.resize(image, (384, 216))         #Convertir la imagen de 1220x1080 a 500x400
+    #Estadar de tamaño en 384x216
+    image = cv2.resize(image, (384, 216))
     
     ##PRE PROCESAMIENTO
     aux = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) #Convertir a escala de grises
